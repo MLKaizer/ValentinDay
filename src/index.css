@@ -100,3 +100,80 @@ button.no:hover {
     opacity: 0; /* Desaparecen al final */
   }
 }
+
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .Gifs {
+    height: 100vh; /* Ocupa toda la altura en móviles */
+    width: 90%; /* Ancho más estrecho */
+    max-width: 400px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 1rem; /* Añade padding */
+    top: 0;
+    bottom: 0;
+  }
+
+  .Gifs h1 {
+    font-size: 1.5rem; /* Reduce tamaño del título */
+    margin-bottom: 1rem;
+  }
+
+  .item-gif {
+    height: 10rem; /* Reduce tamaño del gif */
+    width: 10rem;
+  }
+
+  .botones {
+    margin-top: 2rem;
+    gap: 2rem; /* Espacio entre botones */
+    justify-content: center;
+  }
+
+  button {
+    width: 50px; /* Reduce tamaño de botones */
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  button.no {
+    margin-left: 2rem; /* Reduce margen */
+  }
+
+  .heart {
+    font-size: 1.5rem; /* Reduce tamaño de corazones */
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh); /* Ajusta caída para pantallas móviles */
+      opacity: 0;
+    }
+  }
+}
+
+/* Media Query para dispositivos muy pequeños */
+@media screen and (max-width: 375px) {
+  .Gifs h1 {
+    font-size: 1.2rem;
+  }
+
+  .item-gif {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  button {
+    width: 45px;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+}
