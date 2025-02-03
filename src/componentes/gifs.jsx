@@ -30,7 +30,7 @@ function Gifs() {
       </header>
 
       <section className="item-gif">
-        <img src="src/assets/ositos.gif" alt="Gif animado" />
+        <img src="public\ositos.gif" alt="Gif animado" />
       </section>
 
       <footer className="botones">
